@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Saeed | Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container navigation" aria-label="Main navigation">
+      <a class="logo" href="#home">Mohammed </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" type="button">Dark mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div>
+        <p class="eyebrow">AI ENGINEERING STUDENT</p>
+        <h1>Hi, I’m <span>Mohammed Saeed</span></h1>
+        <p>
+          I’m in my third year of a bachelor’s degree in AI Engineering.
+          I enjoy learning new things, especially about Python and AI.
+        </p>
+        <a class="button" href="#about">A little about me</a>
+      </div>
+
+      <img
+        class="profile-image"
+        src="profile.svg"
+        alt="Default profile icon"
+      >
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2>A little about me</h2>
+        <p>
+          My name is Mohammed Saeed Bin Garhum. I study AI Engineering at
+          bachelor’s level. I’m interested in how computers learn and work
+          with information.
+        </p>
+        <p>
+          In my free time, I like learning about different subjects.
+          I’m currently studying Python, databases, machine learning,
+          deep learning, natural language processing, and computer vision.
+        </p>
+      </div>
+    </section>
+
+    <section class="section alternate-section" id="skills">
+      <div class="container">
+        <p class="eyebrow">WHAT I’M LEARNING</p>
+        <h2>My study interests</h2>
+        <ul class="interest-list">
+          <li>Python</li>
+          <li>Databases</li>
+          <li>Machine Learning</li>
+          <li>Deep Learning</li>
+          <li>Natural Language Processing</li>
+          <li>Computer Vision</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <p class="eyebrow">EDUCATION</p>
+        <h2>My studies</h2>
+
+        <div class="education-summary">
+          <h3>My current program</h3>
+          <h4>Bachelor’s degree</h4>
+          <h5>Artificial Intelligence Engineering</h5>
+          <h6>Level 3 · In progress</h6>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Program</th>
+                <th>Level</th>
+                <th>Field of study</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bachelor’s degree</td>
+                <td>Level 3</td>
+                <td>Artificial Intelligence Engineering</td>
+                <td>In progress</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alternate-section" id="hobbies">
+      <div class="container">
+        <p class="eyebrow">IN MY FREE TIME</p>
+        <h2>Things I enjoy</h2>
+        <p>I like learning about new subjects and exploring technology.</p>
+        <ol class="interest-list">
+          <li>Learning something new</li>
+          <li>Practicing Python</li>
+          <li>Reading about AI</li>
+          <li>Exploring new technology</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-layout">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2>Get in touch</h2>
+          <p>Email: <a href="mailto:spoky1286@outlook.com">spoky1286@outlook.com</a></p>
+          <p>Phone: <a href="tel:+967772351140">+967 772 351 140</a></p>
+        </div>
+
+        <form action="mailto:spoky1286@outlook.com" method="post" enctype="text/plain">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="button" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Mohammed Saeed Bin Garhum</p>
+    </div>
+  </footer>
+
+  <script>
+    const themeButton = document.querySelector(".theme-toggle");
+
+    themeButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+
+      const isDark = document.body.classList.contains("dark-mode");
+      themeButton.textContent = isDark ? "Light mode" : "Dark mode";
+    });
+  </script>
+</body>
+</html>

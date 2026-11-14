@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Default profile avatar silhouette">
+  <defs>
+    <clipPath id="avatar-circle"><circle cx="300" cy="300" r="300"/></clipPath>
+  </defs>
+  <g clip-path="url(#avatar-circle)">
+    <rect width="600" height="600" fill="#344744"/>
+    <circle cx="300" cy="215" r="105" fill="#f7f0e3"/>
+    <path d="M92 600c12-135 85-217 208-217s196 82 208 217H92z" fill="#f7f0e3"/>
+  </g>
+</svg>
